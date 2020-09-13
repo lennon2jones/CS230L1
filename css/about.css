@@ -1,0 +1,36 @@
+.column {
+	float: left;
+	width: 25%;
+	margin-bottom: 16px;
+	padding: 0 8px;
+}
+.card {
+	box-shadow: 0 4px 8px 0 black;
+	margin: 8px;
+    height: 400px;
+}
+.about-section{
+	padding: 50px;
+	text-align: center;
+	background-color: purple;
+	color: white;
+    box-shadow: 0 4px 8px 0 black;
+    text-shadow: 1.5px 1.5px black;
+}
+.container {
+	padding: 0 16px;
+    background-color: lightskyblue;
+    height: 300px;
+    width: 354px;
+}
+.button {
+	border: none;
+	outline: 0;
+	padding: 8px;
+	color: white;
+    text-align: center;
+	background-color: black;
+}
+.title{
+    text-shadow: 1px 1px white;
+}
