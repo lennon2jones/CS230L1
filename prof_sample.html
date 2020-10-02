@@ -1,17 +1,4 @@
-<?php
-require 'includes/header.php';
-require 'includes/dbhandler.php';
-?>
-<main>
-    <?php
-    if(isset($_SESSION['uid'])){
-        $prof_user = $_SESSION['uname'];
-        $sql_pro = "SELECT * FROM profile WHERE uname='$prof_user';";
-        $res = mysqli_query($conn, $sql_pro);
-        $row = mysqli_fetch_array($res);
-        $photo = $row['picpath'];
-    ?>
-    <style>
+<style>
     .center-me {
         display: flex;
         justify-content: center;
@@ -62,16 +49,8 @@ require 'includes/dbhandler.php';
                     <textarea name="bio" id="bio" cols="30" rows="10" placeholder="bio..." style="text-align: center;"></textarea>
                 </div>
                 <div class="form-group">
-                    <button type="submit" name="prof-submit" class="btn btn-outline-primary btn-lg btn-block">upload</button>
+                    <button type="submit" name="prof-submit" class="btn btn-outine-primary btn-lg btn-block">upload</button>
                 </div>
             </form>
         </div>
     </div>
-    
-    <?php
-    }else{
-        header("Location: login.php");
-        exit();
-    }
-    ?>
-</main>
