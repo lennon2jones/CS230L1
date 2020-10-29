@@ -19,7 +19,7 @@ require 'includes/review-helper.php';
                 <div class="form-group" style="margin-top: 15px;">
                     <label class="title-label" for="review-title" style="font-size: 16px; font-weight: bold;">Title</label>
                     <input type="text" name="review-title" id="review-title" style="width: 100%; margin-bottom: 10px">
-                    <textarea class="form-control" id="review-text" name="review" cols="50" placeholer="Enter a comment..."></textarea>
+                    <textarea class="form-control" id="review-text" name="review" cols="50" rows="3" placeholer="Enter a comment..."></textarea>
                     <input type="hidden" name="rating" id="rating">
                     <input type="hidden" name="item_id" value="<?php echo $_GET['id'];?>">
                 </div>
@@ -78,10 +78,10 @@ $(document).ready(function() {
         console.log(id);
     }
     function xhr_getter(prefix, element){
-        var xhttp = new XMLHttpRequest();
+        var xhttp = new XMLHTTPRequest();
         xhttp.onreadystatechange = function(){
-            if(this.reaystate == 4 && this.status == 200){
-                document.getElementbyId(element).innerHTML = this.responseText;
+            if(this.readyState == 4 && this.status==200){
+                document.getElementById(element).innerHtml = this.responseText;
             }
         };
         url = prefix+id;
