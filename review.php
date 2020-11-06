@@ -77,10 +77,13 @@ $(document).ready(function() {
         document.getElementById('rating').value = parseInt(localStorage.getItem('rating'));
         console.log(id);
     }
-    function xhr_getter(prefix, element){
+    function xhr_getter(prefix, element)
+    {
         var xhttp = new XMLHTTPRequest();
-        xhttp.onreadystatechange = function(){
-            if(this.readyState == 4 && this.status==200){
+        xhttp.onreadystatechange = function()
+        {
+            if(this.readyState == 4 && this.status==200)
+            {
                 document.getElementById(element).innerHtml = this.responseText;
             }
         };

@@ -4,7 +4,7 @@
 <main>
 <link rel="stylesheet" href="css/login.css">
         <div class="bg-cover">
-          <div class="row">
+          <div class="row my-auto">
                 <div id="carouselExampleIndicators" class="carousel slide col-md-6 offset-md-2" data-ride="carousel" style="margin-top: 40px; width: 400px; height: 300px;">
                     <ol class="carousel-indicators">
                       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
