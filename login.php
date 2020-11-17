@@ -40,11 +40,7 @@
                         <input type="text" id="inputEmail" name="login-uname" class="form-control" placeholder="Username / Email" required autofocus>
                         <label for="inputPassword" class="sr-only">Password</label>
                         <input type="password" id="inputPassword" name="login-pwd" class="form-control" placeholder="Password" required>
-                        <div class="checkbox mb-3" style="text-align: left;">
-                            <label>
-                                <input type="checkbox" value="remember-me"> Remember me
-                            </label>
-                        </div>
+                        <div class="center-text" style="padding: 20px">Don't Have an Account? <a href="signup.php">Sign Up</a></div>
                         <button class="btn btn-lg btn-primary btn-block" name= "login-submit" type="submit">Sign in</button>
                         <p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>
                     </form>

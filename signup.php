@@ -2,6 +2,8 @@
 require "includes/header.php"
 ?>
 
+<link rel="stylesheet" href="css/signup.css">
+
 <main>
     <div class = "bg-cover">
         <div class = "h-100 container center-me">
