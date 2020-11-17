@@ -18,6 +18,13 @@ require 'includes/dbhandler.php';
         padding: 40px;
         text-align: "center";
     }
+    .bg-cover{
+    background-image: url("../images/Swiss.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    }
     #prof-display {
         display: block;
         width: 150px;
@@ -50,6 +57,7 @@ require 'includes/dbhandler.php';
             }
         }
     </script>
+    <div class="bg-cover">
     <div class="h-100 center-me text-center">
         <div class="my-auto">
             <form action="includes/upload-helper.php" method="POST" enctype="multipart/form-data">
@@ -66,6 +74,7 @@ require 'includes/dbhandler.php';
                 </div>
             </form>
         </div>
+    </div>
     </div>
     
     <?php
