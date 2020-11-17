@@ -19,9 +19,10 @@ require 'includes/dbhandler.php';
         text-align: "center";
     }
     .card {
-	box-shadow: 0 4px 8px 0 black;
-	margin: 8px;
-    height: 400px;
+    border-radius: 50px;
+    background-color: #d5d5d5;
+    padding: 20px;
+    text-align: center;
     }
     .bg-cover{
     background-image: url("../images/Swiss.jpg");
@@ -29,6 +30,9 @@ require 'includes/dbhandler.php';
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
+    }
+    .container { 
+        width: 50%;
     }
     #prof-display {
         display: block;
@@ -62,11 +66,11 @@ require 'includes/dbhandler.php';
             }
         }
     </script>
-    <div class="bg-cover">
-    <div class="card">
-    <div class="h-100 center-me text-center">
-        <div class="my-auto">
-            <form action="includes/upload-helper.php" method="POST" enctype="multipart/form-data">
+        <div class = "bg-cover">
+        <div class = "h-100 container center-me text-center">
+        <div class = "my-auto">
+        <div class = "card">
+                <form action="includes/upload-helper.php" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
                     <img src="<?php echo $photo; ?>" onclick="triggered();" id="prof-display">
                     <label for="prof-image" id="uname-style"><?php echo $prof_user; ?></label>
