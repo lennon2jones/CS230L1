@@ -76,9 +76,6 @@ require 'includes/dbhandler.php';
                     <label for="prof-image" id="uname-style"><?php echo $prof_user; ?></label>
                     <input type="file" name="prof-image" id="prof-image" onchange="preview(this)" class="form-control" style="display: none">
                 </div>
-                <div class ="form-group">
-                    <textarea name="bio" id="bio" cols="30" rows="10" placeholder="bio..." style="text-align: center;"></textarea>
-                </div>
                 <div class="form-group">
                     <button type="submit" name="prof-submit" class="btn btn-outline-primary btn-lg btn-block">upload</button>
                 </div>
